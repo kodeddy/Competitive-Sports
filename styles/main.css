@@ -1,0 +1,11 @@
+.sliding-header{
+    font-family: 'Itim', cursive;
+    font-family: 'Rubik Pixels', cursive;
+    color: orange;
+    font-weight: bold;
+}
+
+.blur {
+    filter: blur(148px);
+    box-shadow: 0 0 0 118px rgb(217 103 20);
+    -webkit-filter: blur(148px);}
