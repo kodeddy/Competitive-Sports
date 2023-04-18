@@ -8,4 +8,13 @@
 .blur {
     filter: blur(148px);
     box-shadow: 0 0 0 118px rgb(217 103 20);
-    -webkit-filter: blur(148px);}
+    -webkit-filter: blur(148px);
+}
+
+.nav-text {
+    font-family: 'Tangerine', serif;
+}
+
+.dropdown-item:hover{
+    background-color: #897161 !important;
+}
