@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
@@ -17,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <script defer src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="image/png" href="">
     <title>Competitive Sports</title>
@@ -25,9 +25,9 @@
 <body class="bg-secondary">
     <div class="blur"></div>
 
-    <marquee width="100%" direction="left" class="mt-5 sliding-header display-2">
+    <!-- <marquee width="100%" direction="left" class="mt-5 sliding-header display-2">
         AUBURN COMPETITIVE SPORTS
-    </marquee>
+    </marquee> -->
 
     <!-- Section containing navbar -->
     <section>
@@ -80,10 +80,9 @@
         <p><em>WELCOME</em></p>
     </section>
 
-    <!-- Single row for steps/mileage -->
-    <section class="container post-welcome">
-        <div class="row align-items-center">
-            <div class="col"></div>
+    <!-- First row with 1 col for steps/mileage -->
+    <section class="container post-welcome w-auto">
+        <div class="row align-items-center justify-content-center">
             <a href="https://auburn.qualtrics.com/jfe/form/SV_9EwP85hv5uQBKe2" target="_blank" class="col card1">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
@@ -91,14 +90,35 @@
                     </div>
                 </div>
             </a>
-            <div class="col"></div>
         </div>
     </section>
 
-    <!-- Second row with 4 cols -->
-    <section class="container post-welcome">
-        <div class="row align-items-center">
-            <a href="https://recreation.auburn.edu/" target="_blank" class="col card1">
+    <!-- Second row with 2 cols for rec hours & kronos form -->
+    <section class="container post-welcome w-auto">
+        <div class="row align-items-center justify-content-center d-block d-md-flex">
+            <a href="https://www.campusrec.auburn.edu/hours" target="_blank" class="col card1 p-4 m-3 w-75">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <h5 class="card-title p-3">C-Rec Hours</h5>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://auburncampusrec.formstack.com/forms/kronos_correction_form" target="_blank"
+                class="col card1 p-4 m-3 w-75">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <h5 class="card-title p-3">Kronos Form</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Third row with 3 cols for rwc connect; w2w; thor guard -->
+    <section class="container post-welcome w-auto">
+        <div class="row align-items-center d-block d-md-flex">
+            <a href="https://recreation.auburn.edu/" target="_blank" class="col card1 p-4 m-3 w-75">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
                         <h5 class="card-title p-3">RWC Connect</h5>
@@ -106,7 +126,7 @@
                 </div>
             </a>
 
-            <a href="https://whentowork.com/logins.htm" target="_blank" class="col card1">
+            <a href="https://whentowork.com/logins.htm" target="_blank" class="col card1 p-4 m-3 w-75">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
                         <h5 class="card-title p-3">WhenToWork</h5>
@@ -114,7 +134,7 @@
                 </div>
             </a>
 
-            <a href="http://auburn.thormobile7.net/mobile/" target="_blank" class="col card1">
+            <a href="http://auburn.thormobile7.net/mobile/" target="_blank" class="col card1 p-4 m-3 w-75">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
                         <h5 class="card-title p-3">Thor Guard</h5>
@@ -122,36 +142,23 @@
                 </div>
             </a>
 
-            <a href="https://www.campusrec.auburn.edu/hours" target="_blank" class="col card1">
-                <div class="card bg-transparent border-0">
-                    <div class="card-body">
-                        <h5 class="card-title p-3">C-Rec Hours</h5>
-                    </div>
-                </div>
-            </a>
         </div>
     </section>
 
-
-    <section class="container post-welcome">
-        <div class="row align-items-center justify-content-center">
-            <a href="https://auburncampusrec.formstack.com/forms/kronos_correction_form" target="_blank" class="col card1">
+    <!-- Fourth row with 2 cols for incident report & injury report -->
+    <section class="container post-welcome w-auto">
+        <div class="row align-items-center justify-content-center d-block d-md-flex">
+            <a href="https://auburn.qualtrics.com/jfe/form/SV_exFeaKYH06xDpXL" target="_blank"
+                class="col card1 p-4 m-3 w-75">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
-                        <h5 class="card-title p-3">Kronos Form</h5>
+                        <h5 class="card-title p-3">Incident Report</h5>
                     </div>
                 </div>
             </a>
 
-            <a href="https://auburn.qualtrics.com/jfe/form/SV_0qPadPfz9L9FnF3" target="_blank" class="col card1">
-                <div class="card bg-transparent border-0">
-                    <div class="card-body">
-                        <h5 class="card-title p-3">Sup Shift Rep.</h5>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://auburn.qualtrics.com/jfe/form/SV_eeULGRZOXT5n8IR" target="_blank" class="col card1">
+            <a href="https://auburn.qualtrics.com/jfe/form/SV_eeULGRZOXT5n8IR" target="_blank"
+                class="col card1 p-4 m-3 w-75">
                 <div class="card bg-transparent border-0">
                     <div class="card-body">
                         <h5 class="card-title p-3">Injury Report</h5>
@@ -160,6 +167,21 @@
             </a>
         </div>
     </section>
+
+    <!-- Last row with 1 col for Sup Shift Report -->
+    <section class="container post-welcome w-auto">
+        <div class="row align-items-center justify-content-center">
+            <a href="https://auburn.qualtrics.com/jfe/form/SV_0qPadPfz9L9FnF3" target="_blank" class="col card1">
+                <div class="card bg-transparent border-0">
+                    <div class="card-body">
+                        <h5 class="card-title p-3">Sup Shift Rep.</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
 </body>
 
 </html>
