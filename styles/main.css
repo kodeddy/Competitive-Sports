@@ -1,5 +1,5 @@
-.sliding-header{
-    font-family: 'Rubik Pixels', cursive;
+.sliding-header {
+    font-family: 'Rubik Pixels', cursive !important;
     color: orange;
     font-weight: bold;
 }
@@ -14,6 +14,71 @@
     font-family: 'Tangerine', serif;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     background-color: #897161 !important;
+}
+
+.dropdown-text {
+    font-size: 100px;
+}
+
+.welcome-text {
+    font-family: 'Tilt Prism', cursive;
+}
+
+.welcome-text em {
+    color: rgb(217 103 20);
+    text-shadow: 2px 2px 9px #000000, 2px 2px 5px blue;
+}
+
+.post-welcome {
+    font-family: 'Nova Oval', cursive;
+}
+
+.post-welcome a {
+    text-decoration: none;
+    background-color: rgb(217 103 20);
+    color: #000000;
+    border-radius: 10px;
+}
+
+.card {
+    /* height: 200px !important; */
+}
+
+.card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #000000;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.card1:hover:before {
+    transform: scale(21);
+}
+
+.card1:hover {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
 }
