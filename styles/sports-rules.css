@@ -1,0 +1,24 @@
+svg {
+    fill: orange;
+    width: 24px;
+    height: 12px;
+}
+
+.top {
+    transition: all .25s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    padding: .25em;
+    background-color: transparent;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
