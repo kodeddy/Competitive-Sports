@@ -37,7 +37,8 @@
 }
 
 .nav-text {
-    font-family: 'Tangerine', serif;
+    /* font-family: 'Tangerine', serif; */
+    font-family: 'Heebo', sans-serif;
 }
 
 .dropdown-item:hover {
